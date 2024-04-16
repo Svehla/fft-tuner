@@ -2,10 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-    <script src="pffft/pffft.simd.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="http://localhost:8003/pffft/pffft.simd.js"></script>
   </head>
+
   <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
     <h1>STFT visualization</h1>
     <p>
       A short audio fragment is downloaded and sliced into audio blocks. FFT magnitudes are
@@ -27,22 +37,22 @@
     <div style="flex-direction: column">
       <div style="display: flex; align-items: center">
         181425__serylis__guitar (C major triad)
-        <audio src="181425__serylis__guitar-chord.wav" controls></audio>
+        <audio src="http://localhost:8003/181425__serylis__guitar-chord.wav" controls></audio>
       </div>
 
       <div style="display: flex; align-items: center">
         g_sharp_chord
-        <audio src="assets/g_sharp_chord.wav" controls></audio>
+        <audio src="http://localhost:8003/assets/g_sharp_chord.wav" controls></audio>
       </div>
 
       <div style="display: flex; align-items: center">
         f_major_chord
-        <audio src="assets/f_major_chord.wav" controls></audio>
+        <audio src="http://localhost:8003/assets/f_major_chord.wav" controls></audio>
       </div>
 
       <div style="display: flex; align-items: center">
         456
-        <audio src="assets/456.wav" controls></audio>
+        <audio src="http://localhost:8003/assets/456.wav" controls></audio>
       </div>
     </div>
 
@@ -52,9 +62,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/fft-js@0.0.12/fft.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/fft-js@0.0.12/fft.min.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/jsfft@0.0.4/dist/complex_array.min.js"></script> -->
-
-    <script type="text/javascript"></script>
   </body>
 </html>

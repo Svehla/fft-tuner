@@ -1,6 +1,3 @@
-.DS_Store
-src/test_pffft
-
 # Logs
 logs
 *.log
