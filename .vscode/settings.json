@@ -1,0 +1,15 @@
+{
+    "cSpell.words": [
+        "Embedder",
+        "Emscripten",
+        "ffprobe",
+        "FFTPACK",
+        "HEAPU",
+        "NETLIB",
+        "PFFFT",
+        "stft"
+    ],
+    "files.associations": {
+        "arm_neon.h": "c"
+    }
+}
