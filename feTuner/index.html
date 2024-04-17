@@ -9,60 +9,12 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
+
     <script src="http://localhost:8003/pffft/pffft.simd.js"></script>
   </head>
 
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-
-    <h1>STFT visualization</h1>
-    <p>
-      A short audio fragment is downloaded and sliced into audio blocks. FFT magnitudes are
-      calculated for each block with the SIMD WASM version of <b>pffft</b>. Note that a Hamming
-      window is applied automatically by default. Next, magnitudes are visualized using a
-      spectrogram placed on a <tt>canvas</tt> element. Time is on the horizontal axis and frequency
-      (Hz) on the vertical.
-    </p>
-    <p>
-      Note that <a href="https://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a> needs
-      to be configured correctly to make this demo work. A working configuration sets these headers:
-      <tt>'Cross-Origin-Embedder-Policy' => 'require-corp'</tt> and
-      <tt>'Cross-Origin-Opener-Policy' => 'same-origin'</tt>.
-    </p>
-    <canvas id="canvas1"></canvas><br />
-    <canvas id="canvas2"></canvas><br />
-    <br />
-
-    <div style="flex-direction: column">
-      <div style="display: flex; align-items: center">
-        181425__serylis__guitar (C major triad)
-        <audio src="http://localhost:8003/181425__serylis__guitar-chord.wav" controls></audio>
-      </div>
-
-      <div style="display: flex; align-items: center">
-        g_sharp_chord
-        <audio src="http://localhost:8003/assets/g_sharp_chord.wav" controls></audio>
-      </div>
-
-      <div style="display: flex; align-items: center">
-        f_major_chord
-        <audio src="http://localhost:8003/assets/f_major_chord.wav" controls></audio>
-      </div>
-
-      <div style="display: flex; align-items: center">
-        456
-        <audio src="http://localhost:8003/assets/456.wav" controls></audio>
-      </div>
-    </div>
-
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"
-      integrity="sha512-jduERlz7En1IUZR54bqzpNI64AbffZWR//KJgF71SJ8D8/liKFZ+s1RxmUmB+bhCnIfzebdZsULwOrbVB5f3nQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/fft-js@0.0.12/fft.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jsfft@0.0.4/dist/complex_array.min.js"></script> -->
   </body>
 </html>

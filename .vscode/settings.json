@@ -29,6 +29,10 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
-  "cSpell.words": [],
+  "cSpell.words": [
+    "ffprobe",
+    "pffft",
+    "stft"
+  ],
   "FSharp.suggestGitignore": false
 }
